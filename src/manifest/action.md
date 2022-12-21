@@ -39,6 +39,7 @@ Please note that filters can be specified at the top level (for the action) or f
 `arch` list specifies the system architecture
 - `ia32`
 - `x64`
+- (`aarch64` is not supported as of writing this document but is planned to be supported when NWJS starts releasing aarch64-compatible builds)
 
 `family` specifies the platform family and can have the following values:
 - `windows`
@@ -52,6 +53,11 @@ Example:
 ```toml
 [[action]]
 items = [{ run = { cmd="echo \"source: $SOURCE target: $TARGET\""} }]
+```
+or
+```toml
+[[action]]
+items = [{ run = { argv=["echo","source: $SOURCE target: $TARGET"], cwd = "$TARGET" } }]
 ```
 
 

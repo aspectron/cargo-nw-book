@@ -1,5 +1,4 @@
-# [description]
-
+# `[description]`
 
 Description contains short and long descriptions of the application.
 
