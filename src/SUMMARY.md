@@ -1,7 +1,7 @@
 # Summary
 [Introduction](./introduction.md)
-- [cargo nw init](./init.md)
-- [cargo nw build](./build.md)
+- [Templates](./templates.md)
+- [Building](./building.md)
 - [Manifest File Format](./manifest.md)
     - [References](./manifest/references.md)
     - [Variables](./manifest/variables.md)
@@ -16,8 +16,9 @@
     - [[images]](./manifest/images.md)
     - [[languages]](./manifest/languages.md)
     - [[firewall]](./manifest/firewall.md)
+    - [[snap]](./manifest/snap.md)
 - [Registributables](./redist.md)
     - [InnoSetup](./redist/innosetup.md)
     - [DMG](./redist/DMG.md)
-    - [SNAP](./redist/snap.md)
- 
+    - [Snap](./redist/snap.md)
+- [Resources](./resources.md)
