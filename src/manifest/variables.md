@@ -7,7 +7,8 @@ Most of the manifest properties (other than the `[application]` section) support
 Internal variables are:
 
 - `$SOURCE` - source project folder (specified in the manifest by `package.root` property)
-- `$TARGET` - destination folder (target application folder)
+- `$TARGET` - destination folder (target application folder) - default `target/nw/build/$NAME-$VERSION/` 
+- `$OUTPUT` - redistributable output folder - default: `target/nw/setup/`
 - `$TEMP` - temporary folder (located inside of the `target/` folder) used by cargo-nw to store temporary information. This is not a system temp folder.
 - `$PLATFORM` operating system platform (`windows`,`linux` or `macos`)
 - `$ARCH` operating system architecture (`ia32` or `x64`)
@@ -17,11 +18,16 @@ Internal variables are:
 - `$ORGANIZATION` - manifest `application.organization` value
 - `$SHORT` - manifest `description.short` value
 - `$LONG` - manifest `description.long` value
-- `$EXE`- `.exe` on Windows and empty on unix
-- `$BAT` - `.bat` on Windows and empty on unix
-- `$CMD` - `.cmd` on Windows and empty on unix
-- `$PS1` - `.ps1` on Windows and empty on unix
-- `$SH` - empty on Windows and `.sh` on unix
+- `$AUTHORS` - manifest `application.authors` value
+- `$COPYRIGHT` - manifest `application.copyright` value
+- `$TRADEMARKS` - manifest `application.trademark` value
+- `$EULA` - manifest `application.eula` value
+- `$URL` - manifest `application.url` value
+- `$EXE`- `".exe"` on Windows and `""` on unix
+- `$BAT` - `".bat"` on Windows and `""` on unix
+- `$CMD` - `".cmd"` on Windows and `""` on unix
+- `$PS1` - `".ps1"` on Windows and `""` on unix
+- `$SH` - `""` on Windows and `".sh"` on unix
 
 `$EXE` variable can be used to construct a binary filename where the filename on unix family of platforms may not have a filename extension, while on windows the extension may be `.exe`, as such specifying `cmd = "my-app$EXE"` will result in `my-app.exe` on Windows and `my-app` on unix.
 
