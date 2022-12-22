@@ -1,4 +1,4 @@
-# Templates
+# The init command
 
 Cargo NW can create Node Webkit project templates. It can generate a basic Rust WASM application or only a manifest file (if integrating with an existing project).
 

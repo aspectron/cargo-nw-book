@@ -1,4 +1,4 @@
-# Building
+# The build command
 
 Builing redistributables with `cargo nw` for different operating systems requires you to perform the build on the target operating system.
 
@@ -7,12 +7,12 @@ To build a redistributable you can use the following command:
 cargo nw build <target>
 ```
 
-Each target, except `archive` is specific to the operating system `cargo nw` is running on.
+Each target, except `archive` is specific to the operating system `cargo nw` is running on. `archive` targets are universal and produce a `.zip` file usable on the target operating system.
 
 Following targets are available:
 - `all` - build all targets available on the current OS
-- `archive` - create a ZIP archive of the redistributable
-- `dmg` - (MacOS) - generate a DMG image
+- `archive` - create a `.zip` archive of the redistributable
+- `dmg` - (MacOS) - generate a MacOS DMG image
 - `innosetup` - (Windows) - generate an InnoSetup interactive installer
 - `snap` - (Linux*) - generate a Snapcraft redistributable image
 
