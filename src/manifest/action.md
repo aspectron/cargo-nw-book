@@ -8,8 +8,6 @@ Actions allow execution of various operations at different stages of the package
 
 Actions acceps filters that denote at which stage or in which environment the action should run.
 
-## Example
-
 The following example will execute a script `build-deps` on Linux and `build-deps.bat` on Windows and then copy all binary files from `deps/build/` to `$TARGET/bin`.
 ```toml
 [[action]]
@@ -45,24 +43,12 @@ Please note that filters can be specified at the top level (for the action) or f
 - `windows`
 - `unix`
 
+## Action Items
+
 The following operations can be included in the list of action items:
 
-`run` executes an application of a command on the underlying operating system
+- `run` - executes an application of a command on the underlying operating system
+- `copy` - performs file copy
+- `write` - creates and writes content to a file
+- `script` - creates and executes a script on the underlying operating system
 
-Example:
-```toml
-[[action]]
-items = [{ run = { cmd="echo \"source: $SOURCE target: $TARGET\""} }]
-```
-or
-```toml
-[[action]]
-items = [{ run = { argv=["echo","source: $SOURCE target: $TARGET"], cwd = "$TARGET" } }]
-```
-
-
-Executes 
-
-`copy`
-`write`
-`script`

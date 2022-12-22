@@ -6,7 +6,7 @@ Package directive controls the packaging properties of the redistributable.
 
 - `signatures` - when set to `true` this will generate `.sha256sum` files containing SHA256 hash of the resulting file. This can be used to fingerprint and validate the validity of the downloadable file. Beware - this is a superficial validation and does not protect you from malicious activity. For proper validation of redistributables you should use GPG key signing.
 
-TODO - `root` - the root (source) folder of the project relative to the `nw.toml` manifest.
+- `source` - the source folder of the project relative to the `nw.toml` manifest.
 
 - `build` - The build directive supports two objects: `WASM` and `NPM`.
     * `WASM` will run `wasmpack` on the root folder before the integration process begins.

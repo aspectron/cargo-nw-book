@@ -6,8 +6,8 @@ The application section declares basic application information.
 - `title` - the human-readable title of the application.  This title will be used to name the appliation DMG image. This is also the title user will see in the Windows Start menu.
 - `version` - The version of the application in the "X.Y.Z" format.
 - `organization` The name of the organization, company or the development group producing this application.
-- `authors` (optional)
-- `copyright` (optional)
-- `trademarks` (optional)
-- `eula` (optional)
-- `url` (optional) - the URL of the product or the organization creating this application.
+- `authors` *optional*
+- `copyright` *optional*
+- `trademarks` *optional*
+- `eula` *optional*
+- `url` *optional* - the URL of the product or the organization creating this application.

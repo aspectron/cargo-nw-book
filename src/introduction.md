@@ -10,3 +10,7 @@ During the application integration process, Cargo NW will automatically download
 
 The goal of this tool is to simplify and automate the creation of redistributable packages, which in many cases can be an extremely tedious and a challenging process.
 
+
+---
+
+If you find this software useful, please consider supporting our development on Patreon. Your support allows us to improve and further customize this software for fellow developer needs. Please visit our website [https://aspectron.org](https://aspectron.org) more information.
