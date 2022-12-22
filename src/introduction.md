@@ -1,6 +1,6 @@
 # Introduction
 
-Cargo NW is a redistributable package generator for applications developed using the [Node Webkit](https://nwjs.io) application platform. Cargo NW generates application redistributables in a form of ready-to-use application folders, application archives, DMG images for MacOS, interactive installers powered by [InnoSetup](https://jrsoftware.org/isinfo.php) for Windows as well as [Snapcraft](https://snapcraft.io/) images for compatible Linux distributions.
+Cargo NW is a *redistributable package generator* for applications developed using the [Node Webkit](https://nwjs.io) application platform. Cargo NW generates application redistributables in a form of ready-to-use application folders, application archives, DMG images for MacOS, interactive installers powered by [InnoSetup](https://jrsoftware.org/isinfo.php) for Windows as well as [Snapcraft](https://snapcraft.io/) images for compatible Linux distributions.
 
 Cargo NW was developed to support next-gen WASM-powered applications developed in Rust on top of the Node Webkit platform and provides an ability to easily generate and build Rust-WASM-based desktop application templates. 
 
