@@ -6,6 +6,7 @@
     - [build](./command-line/build.md)
     - [publish](./command-line/publish.md)
     - [clean](./command-line/clean.md)
+    - [run](./command-line/run.md)
 - [Manifest File Format](./manifest.md)
     - [References](./manifest/references.md)
     - [Variables](./manifest/variables.md)
